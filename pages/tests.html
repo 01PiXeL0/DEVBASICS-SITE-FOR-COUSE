@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тесты - DevBasics</title>
+    <link rel="stylesheet" href="/styles/tests.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="../index.html">DevBasics</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html#courses">Курсы</a></li>
+                <li><a href="/pages/tests.html">Тесты</a></li>
+                <li><a href="/pages/about.html">О нас</a></li>
+                <li><a href="../pages/сontacts.html">Контакты</a></li>
+                <li><a href="../auth/login.html" class="btn-login">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tests-container">
+        <h1>Проверьте свои знания</h1>
+
+        <!-- Секция с категориями тестов -->
+        <div class="test-categories">
+            <div class="category-card" data-category="html">
+                <i class="fab fa-html5"></i>
+                <h3>HTML & CSS</h3>
+                <p>10 тестов</p>
+                <span class="difficulty">Начальный уровень</span>
+            </div>
+
+            <div class="category-card" data-category="js">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>8 тестов</p>
+                <span class="difficulty">Начальный уровень</span>
+            </div>
+
+            <div class="category-card" data-category="python">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>6 тестов</p>
+                <span class="difficulty">Начальный уровень</span>
+            </div>
+        </div>
+
+        <!-- Модальное окно с тестом -->
+        <div class="test-modal" id="testModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Тест: <span id="testTitle">HTML Основы</span></h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="question-container">
+                        <div class="question-number">Вопрос <span id="currentQuestion">1</span> из <span id="totalQuestions">10</span></div>
+                        <div class="question-text" id="questionText">Загрузка вопроса...</div>
+                        <div class="answers-container" id="answersContainer">
+                            <!-- Ответы будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                    <div class="test-controls">
+                        <button id="prevQuestion" class="nav-btn">Назад</button>
+                        <button id="nextQuestion" class="nav-btn">Далее</button>
+                        <button id="submitTest" class="submit-btn" style="display: none;">Завершить тест</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно с результатами -->
+        <div class="results-modal" id="resultsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Результаты теста</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="results-container">
+                        <!-- Результаты будут добавлены через JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DevBasics</h4>
+                <p>Обучение основам программирования с нуля</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>Email: info@devbasics.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/test-data.js"></script>
+    <script src="/scripts/tests.js"></script>
+    <script src="/scripts/auth.js"></script>
+</body>
+</html>

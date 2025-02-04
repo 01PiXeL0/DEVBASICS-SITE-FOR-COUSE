@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - DevBasics</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/auth.css">
+    <link rel="stylesheet" href="/styles/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/index.html">DevBasics</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html#courses">Курсы</a></li>
+                <li><a href="/pages/tests.html">Тесты</a></li>
+                <li><a href="/pages/about.html">О нас</a></li>
+                <li><a href="/pages/сontacts.html">Контакты</a></li>
+                <li><a href="#" class="btn-login">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <div class="profile-header">
+            <h1>Профиль пользователя</h1>
+        </div>
+        
+        <div class="profile-content">
+            <div class="profile-section">
+                <h2>Личная информация</h2>
+                <div class="profile-info">
+                    <div class="info-group">
+                        <label>Имя:</label>
+                        <span id="userName">Загрузка...</span>
+                    </div>
+                    <div class="info-group">
+                        <label>Email:</label>
+                        <span id="userEmail">Загрузка...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Прогресс обучения</h2>
+                <div class="progress-cards">
+                    <div class="progress-card">
+                        <h3>HTML и CSS</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">0% завершено</span>
+                    </div>
+                    <div class="progress-card">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">0% завершено</span>
+                    </div>
+                    <div class="progress-card">
+                        <h3>Python</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">0% завершено</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DevBasics</h4>
+                <p>Обучение основам программирования с нуля</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>Email: info@devbasics.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/auth.js"></script>
+    <script src="/scripts/profile.js"></script>
+</body>
+</html>

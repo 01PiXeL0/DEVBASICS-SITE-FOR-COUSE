@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - DevBasics</title>
+    <link rel="stylesheet" href="/styles/contacts.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- Добавим иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="../index.html">DevBasics</a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html#courses">Курсы</a></li>
+                <li><a href="../pages/tests.html">Тесты</a></li>
+                <li><a href="../pages/about.html">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#" class="btn-login">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-container">
+        <h1>Свяжитесь с нами</h1>
+        
+        <div class="contacts-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@devbasics.ru</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Телефон</h3>
+                    <p>+7 (999) 123-45-67</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Примерная, д. 1</p>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <h2>Отправить сообщение</h2>
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+
+        <div class="social-links">
+            <h3>Мы в социальных сетях</h3>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DevBasics</h4>
+                <p>Обучение основам программирования с нуля</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>Email: info@devbasics.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+</html>

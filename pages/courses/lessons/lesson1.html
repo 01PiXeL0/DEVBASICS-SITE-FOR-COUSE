@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Введение в HTML - Урок 1 - DevBasics</title>
+    <link rel="stylesheet" href="/styles/auth.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/lesson1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/index.html">DevBasics</a></div>
+            <ul class="nav-links">
+                <li><a href="/index.html#courses">Курсы</a></li>
+                <li><a href="/pages/tests.html">Тесты</a></li>
+                <li><a href="/pages/about.html">О нас</a></li>
+                <li><a href="/pages/contacts.html">Контакты</a></li>
+                <li><a href="#" class="btn-login">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lesson-container">
+        <div class="lesson-header">
+            <a href="/pages/courses/html-css.html" class="back-to-course">
+                <i class="fas fa-arrow-left"></i> Вернуться к курсу
+            </a>
+            <div class="lesson-progress">
+                Урок 1 из 15
+            </div>
+        </div>
+
+        <article class="lesson-content">
+            <h1>Введение в HTML</h1>
+            
+            <div class="lesson-theory">
+                <section>
+                    <h2>Что такое HTML?</h2>
+                    <p>HTML (HyperText Markup Language) - это язык разметки, который используется для создания веб-страниц. С его помощью мы определяем структуру и содержание веб-страницы.</p>
+                </section>
+
+                <section>
+                    <h2>Структура HTML документа</h2>
+                    <div class="code-block">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Название страницы&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Заголовок&lt;/h1&gt;
+        &lt;p&gt;Параграф текста&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        <button class="btn-copy">Копировать</button>
+                    </div>
+                    <ul class="explanation-list">
+                        <li><code>&lt;!DOCTYPE html&gt;</code> - объявление типа документа</li>
+                        <li><code>&lt;html&gt;</code> - корневой элемент</li>
+                        <li><code>&lt;head&gt;</code> - метаданные страницы</li>
+                        <li><code>&lt;body&gt;</code> - содержимое страницы</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Базовые теги</h2>
+                    <div class="tags-grid">
+                        <div class="tag-card">
+                            <code>&lt;h1&gt; - &lt;h6&gt;</code>
+                            <p>Заголовки разных уровней</p>
+                        </div>
+                        <div class="tag-card">
+                            <code>&lt;p&gt;</code>
+                            <p>Параграф текста</p>
+                        </div>
+                        <div class="tag-card">
+                            <code>&lt;div&gt;</code>
+                            <p>Блочный контейнер</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="lesson-practice">
+                <h2>Практическое задание</h2>
+                <div class="practice-task">
+                    <p>Создайте простую HTML страницу, которая содержит:</p>
+                    <ul>
+                        <li>Заголовок первого уровня</li>
+                        <li>Два параграфа текста</li>
+                        <li>Заголовок второго уровня</li>
+                    </ul>
+                    <div class="code-editor">
+                        <textarea id="practice-code" rows="10"></textarea>
+                        <button class="btn-check">Проверить</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="lesson-navigation">
+            <div></div>
+            <button class="btn-primary complete-lesson">Завершить урок</button>
+            <a href="lesson2.html" class="btn-secondary">
+                Следующий урок <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DevBasics</h4>
+                <p>Обучение основам программирования с нуля</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p>Email: info@devbasics.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/auth.js"></script>
+    <script src="/scripts/lesson.js"></script>
+</body>
+</html>
